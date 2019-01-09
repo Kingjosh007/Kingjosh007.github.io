@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My App</title>
+    <title>SOLIBINS :)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="app.min.css">
     <link rel="stylesheet" href="./css/w3.css">
@@ -53,127 +53,42 @@ background-position: center;
         </div>
 
         <div class="app-section">
-          <div class="app-button blue" data-target="lettres4">4 LETTRES</div>
+          <div class="app-button blue" onclick="App.load('tiragesshowcase', {lg: 4})">4 LETTRES</div>
         </div>
 
         <div class="app-section">
-          <div class="app-button blue" data-target="lettres5">5 LETTRES</div>
+          <div class="app-button blue" onclick="App.load('tiragesshowcase', {lg: 5})">5 LETTRES</div>
         </div>
 
         <div class="app-section">
-          <div class="app-button blue" data-target="lettres6">6 LETTRES</div>
+          <div class="app-button blue" onclick="App.load('tiragesshowcase', {lg: 6})">6 LETTRES</div>
         </div>
 
         <div class="app-section">
-          <div class="app-button w3-blue" data-target="lettres7">7 LETTRES</div>
+          <div class="app-button w3-blue" onclick="App.load('tiragesshowcase', {lg: 7})">7 LETTRES</div>
         </div>
 
         <div class="app-section">
-          <div class="app-button w3-blue" data-target="lettres8">8 LETTRES</div>
+          <div class="app-button w3-blue" onclick="App.load('tiragesshowcase', {lg: 8})">8 LETTRES</div>
         </div>
       </div>
     </div>
 
-    <div class="app-page" data-page="lettres4">
+    <div class="app-page" data-page="tiragesshowcase">
       <div class="app-topbar">
-        <div class="app-button left" data-back></div>
-        <div class="app-title"><em id="title4txt">4 lettres</em></div>
+        <div class="app-button left" onclick="App.load('home')">Retour</div>
+        <div class="app-title"><em id="titleshowcasetxt">4 lettres</em></div>
       </div>
       <div class="app-content">
        <ul class="tirages app-list">
           <li class="tirage" style="vertical-align: middle; letter-spacing: 1.35pt;">
-            <span class="tir left">
-            </span>
-            <span class="essai right w3-text-green">
-            </span>
-          </li>
-      </ul>
-
-      <div class="w3-display-bottommiddle" style="position: fixed; bottom: 2px;">
-          <div class="app-button w3-theme w3-padding" style="width: 100%;" data-target="correction">CORRIGER</div>
-      </div>
-      </div>
-    </div>
-
-    <div class="app-page" data-page="lettres5">
-      <div class="app-topbar">
-        <div class="app-button left" data-back></div>
-        <div class="app-title"><em id="title5txt">5 lettres</em></div>
-      </div>
-      <div class="app-content">
-        <ul class="tirages app-list">
-          <li class="tirage" style="vertical-align: middle; letter-spacing: 1.35pt;">
-            <span class="tir left">
-            </span>
-            <span class="essai right w3-text-green">
-            </span>
-          </li>
-      </ul>
-
-      <div class="w3-display-bottommiddle" style="position: fixed; bottom: 2px;">
-          <div class="app-button w3-theme w3-padding" style="width: 100%;" data-target="correction">CORRIGER</div>
-      </div>
-      </div>
-    </div>
-
-    <div class="app-page" data-page="lettres6">
-      <div class="app-topbar">
-        <div class="app-button left" data-back></div>
-        <div class="app-title"><em id="title6txt">6 lettres</em></div>
-      </div>
-      <div class="app-content">
-        <ul class="tirages app-list">
-          <li class="tirage" style="vertical-align: middle; letter-spacing: 1.35pt;">
-            <span class="tir left">
-            </span>
-            <span class="essai right w3-text-green">
-            </span>
-          </li>
-      </ul>
-
-      <div class="w3-display-bottommiddle" style="position: fixed; bottom: 2px;">
-          <div class="app-button w3-theme w3-padding" style="width: 100%;" data-target="correction">CORRIGER</div>
-      </div>
-      </div>
-    </div>
-
-    <div class="app-page" data-page="lettres7">
-      <div class="app-topbar">
-        <div class="app-button left" data-back></div>
-        <div class="app-title"><em id="title7txt">7 lettres</em></div>
-      </div>
-      <div class="app-content">
-      <ul class="tirages app-list">
-          <li class="tirage" style="vertical-align: middle; letter-spacing: 1.35pt;">
             <div class="w3-row-padding">
-              <div class="tir w3-third">
-              </div>
-              <div class="essai right w3-third">
-            </div>
-            </div>
-            
-            
-          </li>
-      </ul>
+                <div class="tir w3-col s6 w3-left">
+                </div>
 
-      <div class="w3-display-bottommiddle" style="position: fixed; bottom: 2px;">
-          <div class="app-button w3-theme w3-padding" style="width: 100%;" data-target="correction">CORRIGER</div>
-      </div>
-    </div>
-    </div>
-
-    <div class="app-page" data-page="lettres8">
-      <div class="app-topbar">
-        <div class="app-button left" data-back></div>
-        <div class="app-title"><em id="title8txt">8 lettres</em></div>
-      </div>
-      <div class="app-content">
-        <ul class="tirages app-list">
-          <li class="tirage" style="vertical-align: middle; letter-spacing: 1.35pt;">
-            <span class="tir left">
-            </span>
-            <span class="essai right w3-text-green">
-            </span>
+                <div class="essai w3-col s6 w3-text-blue w3-right">
+                </div>
+            </div>
           </li>
       </ul>
 
@@ -186,17 +101,17 @@ background-position: center;
     <div class="app-page" data-page="proposition">
       <div class="app-content  w3-light-blue">
         <div class="app-topbar">
-            <div class="app-button left w3-black" data-target="lettres7"></div>
+            <div class="app-button left w3-black" onclick="App.load('tiragesshowcase', {lg: 0})"><</div>
            <div class="app-title"><em>Proposition</em></div>
         </div>
         <br><br>
         <div class="w3-right w3-margin-right">Tirage n° <span id="numTirageActuel"></span> / <span id="numTiragesTotal"></span></div>
           <br><br>
-          <div class="espaceTirage w3-center">
+          <div class="w3-center" id="espaceTirage">
             
           </div>
           <br><br>
-          <div class="espacePropo w3-center">
+          <div id="espacePropo" class="w3-center">
             
           </div>
 
@@ -250,141 +165,212 @@ background-position: center;
 
     <script>
       App.controller('home', function (page) {
+          SESSION_FINIE = true;
+      });
+
+      App.controller('tiragesshowcase', function (page, data) {
+          
+          var l = data.lg != 0 ? Number(data.lg): TABSESSION[0].id.length;
+
+          if(SESSION_FINIE)
+          {
+            TABSESSION = shuffle(soliBinTab(l)).slice(0, NBTIRAGES);
+            propoTabs = [];
+            for(var ii=0; ii<NBTIRAGES; ii++)
+                 propoTabs.push("");
+            SESSION_FINIE = false;
+          }
+          
+          var stringL = l + " lettres - " + NBTIRAGES + " tirages";
+
+           $(page).find("#titleshowcasetxt").text(stringL);
+
+            var $template = $(page).find('.tirage').remove();
+            var $tirages = $(page).find('.tirages');
+            TABSESSION.forEach(function (tirage, i, arr) {
+            var $tirage = $template.clone(true);
+            var affich = arr[i].hasOwnProperty("ana") ? arr[i]["ana"]: arr[i]["id"].split("").sort().join("");
+            if(arr[i].hasOwnProperty("ana"))
+               $tirage.find('.tir').html("<h4><b>" + affich + "</b></h4>");
+            else
+              $tirage.find('.tir').html("<h4>" + affich + "</h4>");
+
+            if(propoTabs[i]!="")
+            {
+              $tirage.find('.essai').html("<h4>" + propoTabs[i] + "</h4>");
+            }
+            else
+            {
+              $tirage.find('.essai').html("");
+            }
+
+            $tirage.on('click', function (){
+               App.load('proposition', {tirage: affich, num:i});
+            });
+            $tirages.append($tirage);
+         });
         
-      });
-
-      App.controller('lettres4', function (page) {
-        TABSESSION = shuffle(soliBinTab(4)).slice(0, NBTIRAGES);
-        var l = 4;
-        var stringL = l + " lettres - " + NBTIRAGES + " tirages";
-        $(page).find('#title4txt').text(stringL);
-
-        var $template = $(page).find('.tirage').remove();
-          var $tirages = $(page).find('.tirages');
-         TABSESSION.forEach(function (tirage, i, arr) {
-            var $tirage = $template.clone(true);
-            var affich = arr[i].hasOwnProperty("ana") ? arr[i]["ana"]: arr[i]["id"].split("").sort().join("");
-            if(arr[i].hasOwnProperty("ana"))
-               $tirage.find('.tir').html("<h4><b>" + affich + "</b></h4>");
-            else
-              $tirage.find('.tir').html("<h4>" + affich + "</h4>");
-
-            $tirage.on('click', function (){
-               App.load('proposition', {tirage: affich, num:i});
-            });
-            $tirages.append($tirage);
-         });
-      });
-
-      App.controller('lettres5', function (page) {
-        TABSESSION = shuffle(soliBinTab(5)).slice(0, NBTIRAGES);
-        var l = 5;
-        var stringL = l + " lettres - " + NBTIRAGES + " tirages";
-        $(page).find('#title5txt').text(stringL);
-
-        var $template = $(page).find('.tirage').remove();
-          var $tirages = $(page).find('.tirages');
-         TABSESSION.forEach(function (tirage, i, arr) {
-            var $tirage = $template.clone(true);
-            var affich = arr[i].hasOwnProperty("ana") ? arr[i]["ana"]: arr[i]["id"].split("").sort().join("");
-            if(arr[i].hasOwnProperty("ana"))
-               $tirage.find('.tir').html("<h4><b>" + affich + "</b></h4>");
-            else
-              $tirage.find('.tir').html("<h4>" + affich + "</h4>");
-
-           $tirage.on('click', function (){
-               App.load('proposition', {tirage: affich, num:i});
-            });
-
-            $tirages.append($tirage);
-         });
-      });
-
-      App.controller('lettres6', function (page) {
-        TABSESSION = shuffle(soliBinTab(6)).slice(0, NBTIRAGES);
-        var l = 6;
-        var stringL = l + " lettres - " + NBTIRAGES + " tirages";
-        $(page).find('#title6txt').text(stringL);
-
-        var $template = $(page).find('.tirage').remove();
-          var $tirages = $(page).find('.tirages');
-         TABSESSION.forEach(function (tirage, i, arr) {
-            var $tirage = $template.clone(true);
-            var affich = arr[i].hasOwnProperty("ana") ? arr[i]["ana"]: arr[i]["id"].split("").sort().join("");
-            if(arr[i].hasOwnProperty("ana"))
-               $tirage.find('.tir').html("<h4><b>" + affich + "</b></h4>");
-            else
-              $tirage.find('.tir').html("<h4>" + affich + "</h4>");
-
-            $tirage.on('click', function (){
-               App.load('proposition', {tirage: affich, num:i});
-            });
-
-            $tirages.append($tirage);
-         });
-      });
-
-      App.controller('lettres7', function (page) {
-        TABSESSION = shuffle(soliBinTab(7)).slice(0, NBTIRAGES);
-        var l = 7;
-        var stringL = l + " lettres - " + NBTIRAGES + " tirages";
-        $(page).find('#title7txt').text(stringL);
-
-        var $template = $(page).find('.tirage').remove();
-          var $tirages = $(page).find('.tirages');
-         TABSESSION.forEach(function (tirage, i, arr) {
-            var $tirage = $template.clone(true);
-            var affich = arr[i].hasOwnProperty("ana") ? arr[i]["ana"]: arr[i]["id"].split("").sort().join("");
-            if(arr[i].hasOwnProperty("ana"))
-               $tirage.find('.tir').html("<h4><b>" + affich + "</b></h4>");
-            else
-              $tirage.find('.tir').html("<h4>" + affich + "</h4>");
-
-            $tirage.on('click', function (){
-               App.load('proposition', {tirage: affich, num:i});
-            });
-            $tirages.append($tirage);
-         });
-       });
-
-      App.controller('lettres8', function (page) {
-        TABSESSION = shuffle(soliBinTab(8)).slice(0, NBTIRAGES);;
-        var l = 8;
-        var stringL = l + " lettres - " + NBTIRAGES + " tirages";
-        $(page).find('#title8txt').text(stringL);
-
-        var $template = $(page).find('.tirage').remove();
-          var $tirages = $(page).find('.tirages');
-         TABSESSION.forEach(function (tirage, i, arr) {
-            var $tirage = $template.clone(true);
-            var affich = arr[i].hasOwnProperty("ana") ? arr[i]["ana"]: arr[i]["id"].split("").sort().join("");
-            if(arr[i].hasOwnProperty("ana"))
-               $tirage.find('.tir').html("<h4><b>" + affich + "</b></h4>");
-            else
-              $tirage.find('.tir').html("<h4>" + affich + "</h4>");
-
-            $tirage.on('click', function (){
-               App.load('proposition', {tirage: affich, num:i});
-            });
-            $tirages.append($tirage);
-         });
       });
 
 
       App.controller('proposition', function (page, data) {
 
-        $(page).find('.espaceTirage').html(drawWord(data.tirage));
-        $(page).find('#numTirageActuel').text((data.num+1));
-        $(page).find('#numTiragesTotal').text(NBTIRAGES);
-        $(page).find('.espacePropo' ).html(drawWord(""));
 
-        $(page).find('#passerOuValiderBtn').on('click', function(){
-                 var numActuel = data.num;
+        tirage = data.tirage;
+        essaiPropo = propoTabs[data.num];
+
+        function afficherTirage(tirage, propo)
+{
+  if(propo == "")
+  {
+     $(page).find('#espaceTirage').html(drawWord(tirage));
+     $(page).find('#espacePropo').html("");
+  }
+
+  else
+  {
+     afficherTirage(tirage, "");
+     var tgdupli = tirage;
+     var tabPps = propo.split("");
+     tabPps.forEach(l => {tgdupli = tgdupli.replace(l, "")});
+
+
+     var tabTirs = tirage.split("");
+     tabTirs.forEach(ll => {
+        desactiverLettreDuTirage(ll);
+     });
+
+     var tabTirsRest = tgdupli.split("");
+     tabTirsRest.forEach(ll => {
+        activerLettreDuTirage(ll);
+     })
+
+     
+
+     afficherPropo(propo);
+  }
+}
+
+function afficherPropo(propo)
+{
+  if(propo.length > 0)
+    document.getElementById("espacePropo").innerHTML = drawWordPropo(propo);
+
+  else
+    document.getElementById("espacePropo").innerHTML = "";
+}
+
+function desactiverLettreDuTirage(lt)
+{
+
+  var num = 0;
+  var idl = lt + "" + num;
+
+
+  while(document.getElementById(idl) == null || !isActive(idl))
+  {
+      num++;
+      idl = lt + "" + num;
+
+      if(num == 16)
+        break;
+  }
+
+  if(document.getElementById(idl) != null)
+  {
+      document.getElementById(idl).style.color = "gray";
+      document.getElementById(idl).style.backgroundColor =  "rgba(200, 250, 200, 0.3)";
+  }
+}
+
+function activerLettreDuTirage(lt)
+{
+  var num = 0;
+  var idl = lt + "" + num;
+
+
+  while(document.getElementById(idl) == null || isActive(idl))
+  {
+      num++;
+      idl = lt + "" + num;
+  }
+
+  if(document.getElementById(idl) != null)
+  {
+    document.getElementById(idl).style.color = "black";
+    document.getElementById(idl).style.backgroundColor =  "rgba(160, 250, 200, 0.8)";
+  }
+  
+  
+}
+
+function isActive(idl)
+{
+  return document.getElementById(idl)!= null && document.getElementById(idl).style.color == "black";
+}
+
+document.addEventListener("click", function(e){
+  if(e.target && e.target.id)
+    {
+
+      var id = e.target.id;
+
+      if(id.length == 2)
+      {
+        var deactivated = !isActive(id);
+        if(!deactivated)
+        {
+          essaiPropo += id[0];
+          propoTabs[data.num] = essaiPropo;
+          afficherTirage(tirage, essaiPropo);
+          desactiverLettreDuTirage(id);
+        }
+        
+      }
+
+      else
+      {
+        if(id.startsWith("propo"))
+        {
+          var lt = id.split("propo")[1][0];
+          essaiPropo = essaiPropo.replace(lt, "");
+          propoTabs[data.num] = essaiPropo;
+          activerLettreDuTirage(lt);
+          afficherPropo(essaiPropo);
+        }
+      }
+    }
+});
+
+        function setPropo(dt)
+        {
+          
+          tirage = dt.tirage;
+          essaiPropo = propoTabs[dt.num];
+
+
+          afficherTirage(tirage, essaiPropo);
+          var n = Number(dt.num) + 1;
+          $(page).find('#numTirageActuel').text(n);
+          $(page).find('#numTiragesTotal').text(NBTIRAGES);
+          
+
+          $(page).find('#passerOuValiderBtn').on('click', function(){
+                console.log(n-1);
+                 console.log(essaiPropo);
+                 propoTabs[n-1] = essaiPropo;
+                 var numActuel = Number(dt.num);
                  var nextNum = numActuel == NBTIRAGES-1 ? 0: numActuel+1;
                  var affich = TABSESSION[nextNum].hasOwnProperty("ana") ? TABSESSION[nextNum]["ana"]: TABSESSION[nextNum]["id"].split("").sort().join("");
 
-                 App.load('proposition', {tirage: affich, num: nextNum});
-        })
+
+                 setPropo({tirage: affich, num: nextNum});
+
+          })
+        }
+
+        setPropo(data);
+        
       });
 
 
@@ -393,7 +379,9 @@ background-position: center;
         var $template = $(page).find('.solutiontirage').remove();
         var $solutionstirages = $(page).find('.solutionstirages');
 
-        $(page).find('#scoreExo').text("8" + " / " + TABSESSION.length);
+        var sf = 0;
+
+        
 
         TABSESSION.forEach(function (tirage, i, arr) {
             var $solutiontirage = $template.clone(true);
@@ -406,15 +394,22 @@ background-position: center;
             var aTrouve = propoTabs[i] == TABSESSION[i]['id'];
 
             if(aTrouve)
-              $solutiontirage.find('.propotir').html("<span>" + " = " + "</span>");
+            {
+              sf++;
+              $solutiontirage.find('.propotir').html("<span class='w3-medium' style='width: 100%; margin: auto;'>" + " = " + "</span>");
+            }
             else
             {
-                $solutiontirage.find('.propotir').html("<span class='w3-text-red'><div>" + propoTabs[i] + "</s></span>");
+                $solutiontirage.find('.propotir').html("<span class='w3-text-red' style='font-size: 13px;'><s>" + propoTabs[i] + "</s></span>");
             }
 
             $solutiontirage.find('.soltir').html("<div class='w3-text-green'><b>" + TABSESSION[i]["id"] + "</b></div>");
             $solutionstirages.append($solutiontirage);
          });
+
+        $(page).find('#scoreExo').text(sf + " / " + TABSESSION.length);
+
+
       });
 
       try {
@@ -427,10 +422,18 @@ background-position: center;
     <script>
 
 var NBTIRAGES = 5;
+var LGTH = 5;
 var YES_OR_NO_CHRONO = false;
-var propoTabs = Array(NBTIRAGES);
-propoTabs.fill("");
+var propoTabs = [];
+for(var ii=0; ii<NBTIRAGES; ii++)
+    propoTabs.push("");
 var TABSESSION = soliBinTab(4);
+
+var SESSION_FINIE = true;
+TABSESSION = shuffle(soliBinTab(4)).slice(0, NBTIRAGES);
+
+var tirage = "";
+var essaiPropo = "";
 
 
 function shuffle(a) {
@@ -443,6 +446,12 @@ function shuffle(a) {
     }
     return a;
 }
+
+function loadTirages()
+{
+
+}
+
 
 function soliBinTab(l)
 {
@@ -457,6 +466,8 @@ function soliBinTab(l)
   if(l==8)
     return tabSoliBin8;
 
+  LGTH = l;
+
   return [];
 }
 function incrementNbTirages()
@@ -466,8 +477,10 @@ function incrementNbTirages()
    else
     NBTIRAGES += 5;
 
-  propoTabs = Array(NBTIRAGES);
-  propoTabs.fill("");
+  propoTabs = [];
+for(var ii=0; ii<NBTIRAGES; ii++)
+      propoTabs.push("");
+  TABSESSION = shuffle(soliBinTab(8)).slice(0, NBTIRAGES);
 
   document.getElementById('nbTiragesText').textContent = NBTIRAGES + " tirages";
 
@@ -480,8 +493,10 @@ function decrementNbTirages()
    else
     NBTIRAGES -= 5;
 
-  propoTabs = Array(NBTIRAGES);
-  propoTabs.fill("");
+  propoTabs = [];
+  for(var ii=0; ii<NBTIRAGES; ii++)
+        propoTabs.push("");
+  TABSESSION = shuffle(soliBinTab(8)).slice(0, NBTIRAGES);
   document.getElementById('nbTiragesText').textContent = NBTIRAGES + " tirages";
 
     
@@ -494,20 +509,45 @@ function YesOrNoChrono()
 
 }
 
-function drawLetter(ltr)
+function drawLetter(ltr, i)
 {
 
-      return `<span class='w3-bordered w3-round-medium w3-xxlarge w3-card-2' style='padding:5px; margin-right:2px; background-color:rgba(160, 250, 200, 0.8); color:black;' onclick='this.style.backgroundColor = "gray"; this.style.color="#222"'><b>${ltr}</b></span>`;
+      return `<span id='${ltr + "" + i}' class='w3-bordered w3-round-medium w3-xxlarge w3-card-2' style='padding:5px; margin-right:2px; background-color:rgba(160, 250, 200, 0.8); color:black; font-weight:bold; cursor:pointer;'>${ltr}</span>`;
+  
+}
+
+function drawLetterPropo(ltr, i)
+{
+
+      return `<span id='propo${ltr + "" + i}' class='w3-bordered w3-round-medium w3-xxlarge w3-card-2' style='padding:5px; margin-right:2px; background-color:rgba(160, 250, 200, 0.8); color:black; font-weight:bold; cursor:pointer;'>${ltr}</span>`;
   
 }
 
 function drawWord(wd)
 {
+  if(wd.length != 0)
+  {
+    var tab = wd.split('');
+    var ch = "";
+    tab.forEach((l, i) => ch += drawLetter(l, i));
+    return ch;
+  }
+
+  return "";
+  
+} 
+
+function drawWordPropo(wd)
+{
   var tab = wd.split('');
   var ch = "";
-  tab.forEach(l => ch += drawLetter(l));
+  tab.forEach((l, i) => ch += drawLetterPropo(l, i));
   return ch;
 } 
+
+
+
+
 
 
     </script>
