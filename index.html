@@ -321,10 +321,8 @@ document.addEventListener("click", function(e){
         if(!deactivated)
         {
           essaiPropo += id[0];
+          
           afficherTirage(tirage, essaiPropo);
-
-          if(essaiPropo.length == TABSESSION[0].id.length)
-             $(page).find('#passerOuValiderBtn').text("Valider");
           desactiverLettreDuTirage(id);
         }
         
@@ -336,7 +334,7 @@ document.addEventListener("click", function(e){
         {
           var lt = id.split("propo")[1][0];
           essaiPropo = essaiPropo.replace(lt, "");
-          $(page).find('#passerOuValiderBtn').text("Passer");
+
           activerLettreDuTirage(lt);
           afficherPropo(essaiPropo);
         }
@@ -368,7 +366,7 @@ document.addEventListener("click", function(e){
 
                  App.load('proposition', {tirage: affich, num: nextNum});
 
-          });
+          })
         }
 
         setPropo(data);
